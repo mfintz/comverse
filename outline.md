@@ -1,12 +1,12 @@
 EN | Customer login
 
 #COMVERSE      
-your needs | our portfolio | news & media | about comverse
+your needs | our portfolio | news & media | about Comverse
 
 ##Free Your Markets From IT Complexity
 Learn more
 
-Comverse is value added service global market leader | Managed Services World Congress September 18-19 Berlin ,Germnay | Comverse: enabling a world of conected possibilities
+Comverse is value added service global market leader | Managed Services World Congress September 18-19 Berlin ,Germany | Comverse: enabling a world of connected possibilities
 
 read more | read more | read more 
 
@@ -29,11 +29,11 @@ read more | read more | read more
 
 ##### SUCCESS STORIES
 
-> "We have very good and warm relations with comverse . We always achivet..." 
+> "We have very good and warm relations with comverse . We always achive..." 
 >  
 >  -  SERGEY KOROTYCH deputy CTO ,3 Mob Ukraine
 
-> Comverse has demonstrated that they are partners , not just suppliers, because they understand our needs , oursituations;together we are..."
+> Comverse has demonstrated that they are partners , not just suppliers, because they understand our needs , our situations ; together we are..."
 > 
 > - ADALE KEHASSAN CIO multi-links
 > 
@@ -53,7 +53,7 @@ Key SOLUTIONS
 * Cloud computing
 * Managed Services
 * Customer Experience Management 
-* Rich communication Suite ( RCS)
+* Rich communication Suite (RCS)
 * Social Media 
 * 4G/LTE
 
