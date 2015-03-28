@@ -3,6 +3,7 @@ module.exports = function (grunt) {
 // Do grunt related things in here
 		grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+
 		uglify: {
 			options: {
 				banner: '/*! I am Ugly! */\n',
@@ -15,6 +16,8 @@ module.exports = function (grunt) {
 				dest: 'dist/js/main.min.js'
 			}
 		},
+
+
 		jshint: {
 			options: {
         // Search for a .jshintrc file as usual
@@ -29,7 +32,20 @@ module.exports = function (grunt) {
 			target: {
 				src: 'src/js/main.js'
 			}
-		}
+		},
+		markdown: {
+		    all: {
+		      files: [
+		        {
+		          expand: true,
+		          src: 'outline.md',
+		          dest: '',
+		          ext: '.html'
+		        }
+		      ]
+		    }
+		  }
+		
 	});
 	//load grunt-contrib-uglify
 	grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -41,6 +57,9 @@ module.exports = function (grunt) {
 
 	//load server
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	//md to html
+	grunt.loadNpmTasks('grunt-markdown');
+
 	
 	// Default task(s).
 	grunt.registerTask('default', ['jshint']);
