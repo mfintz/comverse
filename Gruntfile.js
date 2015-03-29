@@ -33,6 +33,15 @@ module.exports = function (grunt) {
 				src: 'src/js/main.js'
 			}
 		},
+		watch: {
+		  scripts: {
+			files: '*.md',
+			tasks: ['markdown'],
+			options: {
+			  debounceDelay: 250,
+			},
+		  },
+		},
 		markdown: {
 		    all: {
 		      files: [
@@ -54,15 +63,16 @@ module.exports = function (grunt) {
 	
 	// Load the plugin that provides the "jshint" task.
 	grunt.loadNpmTasks('grunt-contrib-jshint');
-
 	//load server
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	//md to html
 	grunt.loadNpmTasks('grunt-markdown');
+	//watcher
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	
-	// Default task(s).
-	grunt.registerTask('default', ['jshint']);
+	// Default tasks.
+	grunt.registerTask('default', ['jshint','connect:server', 'markdown', 'watch']);
 	
 
 
