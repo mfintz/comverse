@@ -3,7 +3,16 @@ module.exports = function (grunt) {
 // Do grunt related things in here
 		grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-
+		connect: {
+			server: {
+				options: {
+					port: 8000,
+					base: '.',
+					livereload: true
+				}
+			}
+		},
+		
 		uglify: {
 			options: {
 				banner: '/*! I am Ugly! */\n',
@@ -16,7 +25,6 @@ module.exports = function (grunt) {
 				dest: 'dist/js/main.min.js'
 			}
 		},
-
 
 		jshint: {
 			options: {
@@ -33,6 +41,7 @@ module.exports = function (grunt) {
 				src: 'src/js/main.js'
 			}
 		},
+		
 		watch: {
 		  scripts: {
 			files: '*.md',
@@ -42,6 +51,19 @@ module.exports = function (grunt) {
 			},
 		  },
 		},
+		
+		validation: {
+			options: {
+				reset: grunt.option('reset') || false,
+				stoponerror: false,
+				relaxerror: ['Bad value X-UA-Compatible for attribute http-equiv on element meta.'] //ignores these errors 
+			},
+			files: {
+				src: ['<%= yeoman.app %>/*.html',
+						]
+			}
+		},
+		
 		markdown: {
 		    all: {
 		      files: [
@@ -60,7 +82,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	//make it default
 	grunt.registerTask('default', ['uglify']);
-	
 	// Load the plugin that provides the "jshint" task.
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	//load server
@@ -69,10 +90,11 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-markdown');
 	//watcher
 	grunt.loadNpmTasks('grunt-contrib-watch');
-
+	//html
+	grunt.loadNpmTasks('grunt-html-validation');
 	
 	// Default tasks.
-	grunt.registerTask('default', ['jshint','connect:server', 'markdown', 'watch']);
+	grunt.registerTask('default', ['jshint','connect:server', 'markdown', 'watch','validation']);
 	
 
 
