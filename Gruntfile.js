@@ -48,6 +48,7 @@ module.exports = function (grunt) {
 			tasks: ['markdown'],
 			options: {
 			  debounceDelay: 250,
+			  livereload: true
 			},
 		  },
 		},
