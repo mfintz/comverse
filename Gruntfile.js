@@ -44,10 +44,9 @@ module.exports = function (grunt) {
 		
 		watch: {
 		  scripts: {
-			files: '*.md',
+			files: '*.*',
 			tasks: ['markdown'],
 			options: {
-			  debounceDelay: 250,
 			  livereload: true
 			},
 		  },
