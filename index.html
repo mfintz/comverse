@@ -28,16 +28,22 @@
                 <nav class="navbar"> 
                   <ul class="navbar-inside">
                       <li>
-                          <a href=''>your needs</a>
+                          <a href=''>YOUR NEEDS</a>
                       </li>
                       <li>
-                          <a href=''>our portfolio</a>
+                          <a href=''>OUR PORTFOLIO</a>
                       </li>
                       <li>
-                          <a href=''>news & media</a>
+                          <a href=''>NEWS & MEDIA</a>
                       </li>
                       <li>
-                          <a href=''>about comverse</a>
+                          <a href=''>ABOUT COMVERSE</a>
+                      </li>
+                      <li>
+                          <form class="search" action="" method="GET">
+                             <input type="search" name="search">
+                             <button type="submit"><img src="img/searchBtn.png" alt="search">
+                          </form>
                       </li>
                   </ul>
                 </nav>
@@ -132,22 +138,24 @@
 		</article>
 		
 		<!--fix metadata as job desc ? place of work ? -->
-		<article>
+		<article class="success">
 			<h5>SUCCESS STORIES</h5>
 			<section>
 				<ul>
-					<li>
+					<li itemscope itemtype="http://schema.org/Person">
 						<blockquote>We have very good and warm relations with comverse . We always achive...</blockquote>
-						<a href=''>SERGEY KOROTYCH deputy CTO ,3 Mob Ukraine</a>
+						<a href=''>
+                        <p itemprop="name">SERGEY KOROTYCH</p></a> <span itemprop="jobTitle">deputy CTO</span> ,<span itemprop="worksFor">3 Mob Ukraine</span>
+
 					</li>
-					<li>
+					<li itemscope itemtype="http://schema.org/Person">
 						<blockquote>Comverse has demonstrated that they are partners , not just suppliers, because they understand our needs , our situations ; together we are</blockquote>
-						<a href=''>ADALE KEHASSAN CIO multi-links</a>
+						<a href=''><p itemprop="name">ADALE KEHASSAN</p></a><span itemprop="jobTitle"> CIO</span><span itemprop="worksFor"> multi-links</span>
 					</li>
 
-					<li>
+					<li itemscope itemtype="http://schema.org/Person">
 						<blockquote>"Comverse has been able to fully deliver what we want and we have peers..."</blockquote>
-						<a href=''>RAVISHANKER Tat sky CIO N.</a>
+						<a href=''><p itemprop="name">RAVISHANKER</p> </a><span itemprop="worksFor">Tat sky</span> <span itemprop="jobTitle">CIO N.</span>
 					</li>
 				</ul>
 				<a href=''>All 256 stories</a>
@@ -210,8 +218,9 @@
                     </ul>
                 </li>
             </ul>
+            <div>Copyright 2012 Comverse, Inc. Privacy Policy</div>  <!-- not sure about this div-->
+
         </footer>
-		<div>Copyright 2012 Comverse, Inc. Privacy Policy</div>  <!-- not sure about this div-->
 		
 		<!--boilerplates' scripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
