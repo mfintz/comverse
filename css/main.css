@@ -224,14 +224,71 @@ body{
 }
 
 
-.whatcanwe{
+.whatcanwe {
     font-weight: normal;
     font-style: normal;
     background: #40A4CD;
     color: white;
-    display: block-inline;
+    display: inline-block;
     width: 100%;
+
+
 }
+
+.whatcanwe .icons{
+    list-style: none;
+}
+
+.icons .data::before{
+      content: url("../img/solution_icon_smart-money.png");
+}
+
+.icons .data:hover::before{
+      content: url("../img/solution_icon_smart-money_hover.png");
+}
+
+
+.icons .machine::before{
+      content: url("../img/solution_icon_smart-money.png");
+}
+
+.icons .machine:hover::before{
+      content: url("../img/solution_icon_smart-money_hover.png");
+}
+
+.icons .ott::before{
+      content: url("../img/solution_icon_smart-money.png");
+}
+
+.icons .ott:hover::before{
+      content: url("../img/solution_icon_smart-money_hover.png");
+}
+
+.icons .cloud::before{
+      content: url("../img/solution_icon_smart-money.png");
+}
+
+.icons .cloud:hover::before{
+      content: url("../img/solution_icon_smart-money_hover.png");
+}
+
+.icons .managed::before{
+      content: url("../img/solution_icon_smart-money.png");
+}
+
+.icons .managed:hover::before{
+      content: url("../img/solution_icon_smart-money_hover.png");
+}
+
+.icons .social::before{
+      content: url("../img/solution_icon_smart-money.png");
+}
+
+.icons .social:hover::before{
+      content: url("../img/solution_icon_smart-money_hover.png");
+}
+
+
 
 .events{
     background-image: url("../img/news-and-events-bg.jpg");
@@ -242,6 +299,29 @@ body{
     display:block;
     padding:2px;
     color:white;
+
+}
+
+.events a{
+    text-decoration: none;
+    color:white;
+}
+
+.events .news a::before{
+      content: url("../img/eventListIconNews.png");
+}
+
+.events .news a:hover::before{
+      content: url("../img/eventListIconNews_hover.png");
+}
+
+
+.events .event a::before{
+      content: url("../img/eventListIconEvents.png");
+}
+
+.events .event a:hover::before{
+      content: url("../img/eventListIconEvents_hover.png");
 }
 
 
@@ -251,16 +331,48 @@ body{
     padding-top: 10px;
 }
 
+
+.icons .data::before{
+      content: url("../img/solution_icon_smart-money.png");
+}
+
 .success{
     background: #ECECEC;
     color: #565656;
 }
+
+.whitebox{
+    background-color: white;
+    list-style-type: none;
+}
+
+
+.hover .before, .hover:hover .after {
+    opacity: 1;
+}
+
+.whitebox .after {
+    background-color: #40A4CD;
+    height: 100%;
+    width: 100%;
+}
+
+.whitebox .after, .whitebox:hover .before {
+    opacity: 0;
+}
+
+
 footer{
     background: #323232;
     color:white;
 }
+footer ul{
+        list-style: none;
+}
 
 
+.latest{
+}
 
 /* ==========================================================================
    Base styles: opinionated defaults
