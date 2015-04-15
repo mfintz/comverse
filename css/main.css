@@ -128,12 +128,11 @@ body{
 
 
 .carousel{
-    background-image: url("/img/slide-bg-complexity.jpg");
+    background-image: url("img/slide-bg-complexity.jpg");
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center 78px;
-    background-color: red;
     height: 650px;
     display:block;
     padding-top:78px;
