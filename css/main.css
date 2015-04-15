@@ -8,9 +8,9 @@
 
 
 body{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 78px;
-    width: 940px;
+   /* width: 940px; */
     margin: auto;
     display: block;
 }
@@ -18,18 +18,18 @@ body{
 .header{
   position: fixed;
   width: 100%;
-  height: 90px;
+ /* height: 90px;*/
   top:0;
   right:0;
   left: 0;
-  background: #FFFFFF;
+  background: white;
   box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.27);
-
+    z-index: 10;
 }
 
 .container{
     height: 78px;
-    width: 940px;
+    width: 1200px;
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
@@ -41,25 +41,25 @@ body{
 
 .logo {
   height: 100%;
-  vertical-align: middle;
-  display: block;
-  max-width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  float:left
+  position: relative;
+  display: inline-block;
+  margin:auto;
+
       
 }
 
 .navbar {
-    float: left;
-    padding: 60px 0 0;
     position: relative;
-  /* display: inline;*/
+    display: inline-block;
 }
 
 .navbar-inside {
  /*   list-style: none;*/
     margin: 0;
+     padding-left:150px;
+    padding-top:1px;
+    position: relative;
+    display: inline-block;
 }
 
 .navbar-inside > li {
@@ -70,7 +70,6 @@ body{
 
 
 .navbar-inside > li > a {
-    text-transform: uppercase;
     text-decoration: none;
     color: #585951;
     display:block;
@@ -98,12 +97,51 @@ body{
     text-decoration: none;
 }
 
-
-.carousel{
-  display:block;
-  padding-top:78px;
+.search input {
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 5px;
+    height:16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 142px;
+    outline-style: none;
+    display: inline-block;
 }
 
+.search button {
+    border: none;
+    display:inline-block;
+    right:35px;
+    background: none;
+    position:relative;
+
+}
+
+.search button img {
+    width:13px;
+    height:13px;
+}
+
+
+
+
+.carousel{
+    background-image: url("/img/slide-bg-complexity.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 78px;
+    height: 650px;
+    display:block;
+    padding-top:78px;
+    color:white;
+}
+
+.carousel h1{
+    width: 400px;
+}
 
 
 .morebtn{
@@ -130,12 +168,17 @@ body{
 
 
 .morebox{
-    width:300px;
-    height:150px;
+    width:270px;
+    height:160px;
     color:white;
     border-radius:5px;
     padding: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
 }
+
+
 
 .morebox h2{
     margin:5px;
@@ -154,18 +197,21 @@ body{
 
 .pinkbox{
     background-color: #f24f9e;
-    opacity: 0.5;
+    list-style: none;
+    opacity: 0.7;
 }
 
 
 .greenbox{
-    background-color: #66CC33;;
-    opacity: 0.5;
+    background-color: #66CC33;
+    list-style: none;
+    opacity: 0.7;
 }
 
 .orangebox{
-    background-color: #FF8A3C;;
-    opacity: 0.5;
+    background-color: #FF8A3C;
+    list-style: none;
+    opacity: 0.7;
 }
 
 
@@ -183,14 +229,30 @@ body{
     font-style: normal;
     background: #40A4CD;
     color: white;
-    display: block;
-    width: 940px;
-    padding: 0;
+    display: block-inline;
+    width: 100%;
+}
+
+.events{
+    background-image: url("../img/news-and-events-bg.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    display:block;
+    padding-top:78px;
+    color:white;
 }
 
 
-
-
+.success{
+    background: #ECECEC;
+    color: #565656;
+}
+footer{
+    background: #323232;
+    color:white;
+}
 
 
 

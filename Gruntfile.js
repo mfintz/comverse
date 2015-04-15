@@ -44,7 +44,7 @@ module.exports = function (grunt) {
 		
 		watch: {
 		  scripts: {
-			files: '*.*',
+			files: ['index.html', 'css/main.css'],
 			tasks: ['markdown'],
 			options: {
 			  livereload: true
