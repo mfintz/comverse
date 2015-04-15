@@ -133,6 +133,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center 78px;
+    background-color: red;
     height: 650px;
     display:block;
     padding-top:78px;
@@ -234,16 +235,22 @@ body{
 }
 
 .events{
-    background-image: url("../img/news-and-events-bg.jpg");
+    background-image: url("/img/news-and-events-bg.jpg");
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     display:block;
-    padding-top:78px;
+    padding:2px;
     color:white;
 }
 
+
+.events h4{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+}
 
 .success{
     background: #ECECEC;
