@@ -1,5 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="">
+
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,11 +11,13 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
+
+
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -25,8 +29,8 @@
                 <a href="#" class="logo">
                   <img src="img/comverse-logo.png" alt="Comverse-logo">      
                 </a>
-                <nav class="navbar"> 
-                  <ul class="navbar-inside">
+                <nav> 
+                  <ul class="navbar">
                       <li>
                           <a href=''>YOUR NEEDS</a>
                       </li>
@@ -40,16 +44,18 @@
                           <a href=''>ABOUT COMVERSE</a>
                       </li>
                   </ul>
+
                   <form class="search" action="" method="GET">
                        <input type="search" name="search">
-                       <button type="submit"><img src="img/searchBtn.png" alt="search">
+                       <button type="submit" class="submit"><img src="img/searchBtn.png" alt="search">
                   </form>
+
                 </nav>
                 
                 <ul class="header-login">
                   <li>
                     <a href="#">EN</a>
-                      |
+                        <!--TODO: try | or ::before here-->
                   </li>
                   <li>
                     <a href="#">customer login</a>
@@ -58,54 +64,61 @@
               
               </div>
               
-                
-              
-              
-            
         </header>
 
 		<div class="carousel">
-			<article>
-			   <h1>Free Your Markets From IT Complexity</h1>
-			   <section class="carousel-inside">
-					<p>comverse policy studio</p>
-					<p>1st ever Marketing Oriented policy tool</p>
-					<a href="" class="morebtn">Learn More <img src="img/btnArrow.png"/></a> 
-					<article class="boxes">
-						<ul>
-							<li class="morebox pinkbox"><h2>
-								Comverse Is Value Added Service Global Market Leader</h2>
-								<a href="" class="pinkboxreadmore">Read more</a>
-							</li>
-							<li class="morebox greenbox"><h2>
-								Managed Services World Congress September 18-19 Berlin, Germnay</h2>
-								<a href="">Read More</a>
-							</li>
-							<li class="morebox orangebox"><h2>
-								Comverse: enabling a world of connected possibilities</h2>
-								<a href="">Watch Now</a>
-							</li>
-						</ul>
-					</article>
-				</section>
-			</article>		
+            <section class="carousel-container">
+    			   <h1><b>Free</b> Your Markets From IT <b>Complexity</b></h1>
+                    <p>Comverse Policy Studio</p>
+                    <p><b>1st</b> Ever Marketing Oriented Policy Tool</p>
+    			   <section class="carousel-inside">
+
+    					<a href="" class="morebtn">Learn More</a> 
+    					<article class="boxes">
+    						<ul>
+    							<li class="morebox pinkbox"><h2>
+    								Comverse Is Value Added Service Global Market Leader</h2>
+    								<a href="" class="pinkboxreadmore">
+                                    <img src="img/ReadMoreChains.jpg" alt="readMore">
+
+                                    Read more</a>
+    							</li>
+    							<li class="morebox greenbox"><h2>
+    								Managed Services World Congress September 18-19 Berlin, Germnay</h2>
+    								<a href="">
+                                    <img src="img/ReadMorePage.jpg" alt="readMore">
+                                    Read More</a>
+    							</li>
+    							<li class="morebox orangebox"><h2>
+    								Comverse: enabling a world of connected possibilities</h2>
+    								<a href="">
+                                    <img src="img/ReadMoreChains.jpg" alt="WatchNow">
+                                    Watch Now</a>
+    							</li>
+    						</ul>
+    					</article>
+    				</section>
+            </section>	
 		</div>
+
+
+
 		
-		
-		<article class="whatcanwe">
-			<h3>WHAT CAN WE DO FOR YOU </h3>
-			<section="doing">
-				<ul class="icons">
-					<li class="data">data monetization</li>
-					<li class="machine">machine to machine (m2m)</li>
-					<li class="ott">over-the-top (OTT)</li>
-					<li class="cloud">Cloud computing</li>
-					<li class="managed">Managed services</li>
-					<li class="social">Social media</li>
-				</ul>
-				<a href='' class="morebtn">see all of our solutions<img src="img/btnArrow.png"/></a>
-			</section>
-		</article>
+		<div class="offering">
+            <section class="whatcanwe">
+
+        			<h3>WHAT CAN WE DO FOR YOU </h3>
+        				<ul class="icons">
+        					<li class="data">data monetization</li>
+        					<li class="machine">machine to machine (m2m)</li>
+        					<li class="ott">over-the-top (OTT)</li>
+        					<li class="cloud">Cloud computing</li>
+        					<li class="managed">Managed services</li>
+        					<li class="social">Social media</li>
+        				</ul>
+        				<a href='' class="morebtn else-btn">see all of our solutions</a>
+            </section>
+        </div>
 		
 		<!-- TODO: add time element http://html5doctor.com/the-time-element/-->
 		<article class="events">

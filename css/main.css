@@ -7,34 +7,51 @@
  */
 
 
+/* known TODO list:
+    - add the | thingie using ::before
+    - fix the search form - for some reason it has leftovers on the right
+    - fix the arrow in morebtn
+    - fix z-index
+    - fix WHAT CAN WE DO FOR YOU images
+    */
+
 body{
     font-family: 'Open Sans', sans-serif;
-    height: 78px;
+ /*   height: 78px;*/
    /* width: 940px; */
     margin: auto;
     display: block;
 }
 
+
+
+
+
 .header{
-  position: fixed;
-  width: 100%;
- /* height: 90px;*/
-  top:0;
-  right:0;
-  left: 0;
-  background: white;
-  box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.27);
-    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    top:0;
+    right:0;
+    left: 0;
+    background: white;
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.27);
+    z-index: 99;
+    display: block;
 }
 
 .container{
-    height: 78px;
-    width: 1200px;
+ /*   height: 78px;*/   /*TODO:makes the login pop?!*/
+    display: block;
+    position: relative;
+    max-width: 960px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+
 .container a:hover {
     color: #30A4D9;
 }
@@ -43,72 +60,97 @@ body{
   height: 100%;
   position: relative;
   display: inline-block;
-  margin:auto;
+  bottom: -15px;
+ /* margin:auto;*/
 
       
 }
 
-.navbar {
+nav {
     position: relative;
     display: inline-block;
+
 }
 
-.navbar-inside {
- /*   list-style: none;*/
+.navbar {
+    list-style: none;
     margin: 0;
-     padding-left:150px;
+    padding-left:180px;
+    padding-right:70px;
     padding-top:1px;
     position: relative;
     display: inline-block;
 }
 
-.navbar-inside > li {
-    display: block;
-    float:left;
-    position:relative;
+.navbar> li {
+    list-style-type: none;
+    display: inline-block;
+  /*  float:left; */ /*TODO:not sure, if i use float then inline would work*/
+ /*   position:relative;*/
 }
 
 
-.navbar-inside > li > a {
+.navbar> li > a {
     text-decoration: none;
     color: #585951;
     display:block;
     outline:0;
-    padding: 0 0 0 20px;
+   /*   -webkit-padding-start: 20px;*/
+    padding: 0 0 0 10px;
     
 }
 
 
 .header-login {
-    float:right;
-    display:inline;
+    position: absolute;
+    display:inline-block;
     color:#585951;
-    padding-top:5px;
+    top: 0;
+    right:0;
+    /*padding-top:5px;*/
 }
 
 .header-login >li {
-  display:block;
-  float: right;
+  display:inline;
+
+ /* float: right;*/
 }
 
 .header-login >li>a{
     color:#585951;
-    float: right;   
+
+    /*float: right;   */
     text-decoration: none;
+}
+
+.search{
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 0px;
+    margin-left:0px;
+    padding-left: 0px;
 }
 
 .search input {
     border: 1px solid rgb(210, 210, 210);
-    border-radius: 5px;
-    height:16px;
-    padding-top: 2px;
+    background-color:  #ffffff;
+    box-shadow: 0px 1px 1px 0px rgba(231, 231, 231, 0.75);
+
+    border-radius: 6px;
+    
+    padding: 0px;
+  /*  padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 4px;
-    padding-right: 4px;
-    width: 142px;
+    padding-right: 4px;*/
+    width: 146px;
+    height: 20px;
     outline-style: none;
     display: inline-block;
 }
+
+
+
 
 .search button {
     border: none;
@@ -127,6 +169,12 @@ body{
 
 
 
+
+
+
+
+
+
 .carousel{
     background-image: url("../img/slide-bg-complexity.jpg");
     background-size: auto;
@@ -136,21 +184,51 @@ body{
     height: 650px;
     display:block;
     padding-top:78px;
+    padding-bottom: 0;
     color:white;
+    z-index: 50;
 }
 
-.carousel h1{
-    width: 400px;
+
+.carousel-container{
+    max-width: 960px;
+    margin-top:78px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    z-index: 50;
+}
+
+.carousel-container > h1{
+    font-size: 42px ;  /* Approximation due to font substitution */
+    font-weight: 400;
+    font-size: 42px; /* Approximation due to font substitution */
+    line-height: 44px; /* Approximation due to font substitution */
+    text-align: left;
+    width:415px;
+
+}
+
+.carousel-inside ul{
+    padding-left: 0;
+    padding-top: 30px;
 }
 
 
 .morebtn{
-  text-decoration:none;
-  background: #1486C1;
-  border-radius: 6px;
-  color: white;
-  padding: 4px 5px 5px 7px;
-  font-size:17px;
+    text-decoration:none;
+    background-color:  #3399cc;
+    box-shadow: 0px 1px 2px 0px rgba(62, 157, 194, 0.75);
+    border-radius: 6px;
+    color: white;
+    padding: 4px 5px 5px 7px;
+    font-size:14px;
+}
+
+.morebtn:after{
+    content: url("../img/btnArrow.png");
+    padding-left: 25px;
+
 }
 
 .morebtn:hover{
@@ -168,10 +246,10 @@ body{
 
 
 .morebox{
-    width:270px;
-    height:160px;
+    width:286px;
+    height:174px;
     color:white;
-    border-radius:5px;
+border-radius: 6px;
     padding: 10px;
     display: inline-block;
     margin-right: 10px;
@@ -181,10 +259,13 @@ body{
 
 
 .morebox h2{
+    cursor:pointer;
+    font-size: 24px;
+    line-height: 30px; 
+    text-align: left;
     margin:5px;
     padding-bottom:25px;
-    font-size: 22px;
-    font-weight:lighter;
+    font-weight: 300;
 }
 
 
@@ -194,6 +275,8 @@ body{
     font-size:15px;
     font-weight:bold;
 }
+
+
 
 .pinkbox{
     background-color: #f24f9e;
@@ -215,6 +298,10 @@ body{
 }
 
 
+
+
+
+
 .morebox:hover{
     opacity: 1;
 }
@@ -224,21 +311,59 @@ body{
 }
 
 
+.offering{
+    background: url("../img/WhatCanWeBack.jpg") no-repeat center center;
+    /*background-size: cover;*/
+    z-index: 25;
+ /*   height: 451px;*/
+    padding-bottom: 58px;
+}
+
+
+
+
+
 .whatcanwe {
     font-weight: normal;
     font-style: normal;
-    background: #40A4CD;
     color: white;
-    display: inline-block;
-    width: 100%;
+    display: block;
+    max-width: 960px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+    z-index: 25;
+
 
 
 }
 
-.whatcanwe .icons{
+.whatcanwe h3{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 0;
+    line-height: 40px;
+}
+
+.whatcanwe ul{
+    padding-left: 0px;
     list-style: none;
+    display: block;
+
 }
 
+
+.icons li{
+    text-align: center;
+    vertical-align: top; 
+    display: inline-block;
+    font-size: 14px;
+    padding-right: 0px;
+    max-width: 155px;
+}
 .icons .data::before{
       content: url("../img/solution_icon_smart-money.png");
 }
@@ -287,6 +412,24 @@ body{
 .icons .social:hover::before{
       content: url("../img/solution_icon_smart-money_hover.png");
 }
+
+
+.whatcanwe a.morebtn{
+    margin-top: 60px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+.else-btn{
+    width: 188px;
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+  }
 
 
 
