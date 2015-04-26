@@ -13,12 +13,14 @@
     - fix the arrow in morebtn
     - fix z-index
     - fix WHAT CAN WE DO FOR YOU images
+    - replace "webkit"
+    - lower text inside the events boxes
     */
 
 body{
     font-family: 'Open Sans', sans-serif;
  /*   height: 78px;*/
-   /* width: 940px; */
+   /* width: 960px; */
     margin: auto;
     display: block;
 }
@@ -180,7 +182,7 @@ nav {
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center 78px;
+    background-position: center 90px;
     height: 650px;
     display:block;
     padding-top:78px;
@@ -433,22 +435,141 @@ border-radius: 6px;
 
 
 
-.events{
+
+
+.happening{
     background-image: url("../img/news-and-events-bg.jpg");
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+    background-position-x: center ;
+    background-position-y:center;
+    height: 454px;
+    z-index:15;
     display:block;
     padding:2px;
     color:white;
 
 }
 
+.events{
+    max-width:960px;
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+
+    
+}
+
+.events h4{
+    color:white;
+    font-size: 42px; 
+    font-weight: 300;
+    line-height: 28px; 
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+
+
 .events a{
     text-decoration: none;
     color:white;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
 }
+
+
+.events ul{
+    display: block;
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+}
+
+.events li{
+    display: inline-block;
+    margin-right: 10px;
+    color:  white;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 28px; 
+    text-align: left;
+}
+.news div>p,.event div>p{
+    text-align: left;
+    border-radius: 2px;
+    background-color:  rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 1px 4px 0px #a2a2a2;
+    width: 296px;
+    height: 119px;
+    margin-right: 10px;
+    font-family: Arial;
+    color:  #1a1a1a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transition-delay: initial;
+}
+
+.news div>p:hover,.event div>p:hover{
+        background-color:  rgba(255, 255, 255, 0.8);
+}
+
+
+time{
+    display: inline-block;
+    border-radius: 2px;
+    background-color:  #3399cc;
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    width: 69px;
+    height: 99px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    float:left;
+
+}
+
+.day{
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 7px;
+    padding-bottom: 25px;
+    color:white;
+    text-align: center;
+    display: block;
+    border-bottom: dotted;
+    border-bottom-width: 1px;
+    font-size: 48px; 
+    font-weight: 400;
+    width: 60px;
+}
+
+.month{
+
+
+
+    color:white;
+    text-align: center;
+    display: block;
+
+
+    font-size: 25px; 
+    font-weight: 400;
+
+}
+
 
 .events .news a::before{
       content: url("../img/eventListIconNews.png");
@@ -468,11 +589,7 @@ border-radius: 6px;
 }
 
 
-.events h4{
-    text-align: center;
-    font-size: 40px;
-    padding-top: 10px;
-}
+
 
 
 .icons .data::before{
