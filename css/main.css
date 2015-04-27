@@ -15,6 +15,7 @@
     - fix WHAT CAN WE DO FOR YOU images
     - replace "webkit"
     - lower text inside the events boxes
+    - add back to top reg
     */
 
 body{
@@ -448,7 +449,6 @@ border-radius: 6px;
     z-index:15;
     display:block;
     padding:2px;
-    color:white;
 
 }
 
@@ -461,6 +461,7 @@ border-radius: 6px;
     margin-top: 0;
     margin-bottom: 0;
     text-align: left;
+    color: white;
 
     
 }
@@ -483,7 +484,11 @@ border-radius: 6px;
     font-size: 16px;
     font-weight: 400;
     text-align: left;
+    position: relative;
+    left: 5px;
 }
+
+
 
 
 .events ul{
@@ -495,7 +500,6 @@ border-radius: 6px;
 .events li{
     display: inline-block;
     margin-right: 10px;
-    color:  white;
     font-size: 34px;
     font-weight: 300;
     line-height: 28px; 
@@ -509,6 +513,7 @@ border-radius: 6px;
     width: 296px;
     height: 119px;
     margin-right: 10px;
+    padding-top: 10px;
     font-family: Arial;
     color:  #1a1a1a;
     font-size: 16px;
@@ -519,6 +524,8 @@ border-radius: 6px;
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
     transition-delay: initial;
+    cursor:pointer;
+
 }
 
 .news div>p:hover,.event div>p:hover{
@@ -533,7 +540,7 @@ time{
     box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.2);
     width: 69px;
     height: 99px;
-    margin-top: 10px;
+ /*   margin-top: 10px;*/
     margin-right: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -571,20 +578,33 @@ time{
 }
 
 
-.events .news a::before{
-      content: url("../img/eventListIconNews.png");
+.events  a:hover{
+    color: black;
 }
 
-.events .news a:hover::before{
+.events .news a:before{
+    content: url("../img/eventListIconNews.png");
+    position: relative;
+    right: 5px;
+
+}
+
+
+
+.events .news a:hover:before{
       content: url("../img/eventListIconNews_hover.png");
+
 }
 
 
-.events .event a::before{
-      content: url("../img/eventListIconEvents.png");
+
+.events .event a:before{
+    content: url("../img/eventListIconEvents.png");
+    position: relative;
+    right: 5px;
 }
 
-.events .event a:hover::before{
+.events .event a:hover:before{
       content: url("../img/eventListIconEvents_hover.png");
 }
 
@@ -596,37 +616,369 @@ time{
       content: url("../img/solution_icon_smart-money.png");
 }
 
+
+
+
+
+
+
+
+
+
+
 .success{
     background: #ECECEC;
     color: #565656;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center ;
+    background-position-y:center;
+    height: 650px;
+    z-index:10;
+    padding:2px;
+
+}
+.seemore{
+    max-width: 190px;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
-.whitebox{
-    background-color: white;
-    list-style-type: none;
+
+.success a.morebtn{
+      margin-top: 60px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+.stories{
+    max-width:960px;
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    display: block;
+
+}
+
+.stories ul{
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.stories li{
+    display: inline-block;
+
 }
 
 
-.hover .before, .hover:hover .after {
-    opacity: 1;
+.success h5{
+    color:  #565656;
+    font-size: 42px; 
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 10px;
 }
 
-.whitebox .after {
-    background-color: #40A4CD;
-    height: 100%;
-    width: 100%;
+
+.stories .first{
+    border-radius: 2px;
+    width: 349px;
+    vertical-align: top;
+    padding-right: 5px;
 }
 
-.whitebox .after, .whitebox:hover .before {
-    opacity: 0;
+.sergey-before{
+    background: white;
+    text-align: left;
+    padding: 5px;
 }
+
+.sergey-before blockquote{
+    color:  #565656;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px; 
+    margin: 0;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 8px;
+
+}
+.sergey-before blockquote p{
+    margin: 0;
+}
+.sergey-before blockquote p:before{
+    content: url("../img/quote-grey.png");
+}
+.sergey-before blockquote:before{
+    content: url("../img/sergey.jpg");
+    float:left;
+    padding-right: 5px;
+}
+.sergey-before .details-all:after{
+    content: url("../img/3mob.jpg");
+    padding-right: 15px;
+    float:right;
+}
+
+.details{
+    padding-left: 15px;
+    margin-bottom: 0px;
+    color:  #565656;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+
+
+
+.sergey-before hr{
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    width: 315px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ECECEC;
+
+}
+
+.cycle{
+    padding-top: 10px;
+    height: 97px;
+    padding-right: 5px;
+    width: 110px;
+    content: url("../img/cycle.jpg");
+}
+.bull{
+    height: 97px;
+    padding-right: 5px;
+    width: 110px;
+    content: url("../img/bull.jpg");
+}
+.gem{
+    height: 97px;
+    width: 110px;
+    content: url("../img/gem.jpg");
+
+}
+
+
+
+
+
+
+
+.stories .second{
+    border-radius: 2px;
+    width: 347px;
+}
+
+.adale-before {
+    background: white;
+    text-align: left;
+    padding-bottom: 0px;
+}
+
+.adale-before hr{
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    width: 313px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ECECEC;
+
+}
+
+
+
+
+.adale-before blockquote{
+    color:  #565656;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px; 
+    margin: 0;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-top: 7px;
+    padding-left: 8px;
+
+}
+.adale-before blockquote p{
+    margin: 0;
+}
+
+.adale-before blockquote:before{
+    content: url("../img/adale.jpg");
+    float:left;
+    padding-right: 5px;
+}
+.adale-before .details-all:after{
+    content: url("../img/adalelogo.jpg");
+    padding-right: 15px;
+    float:right;
+}
+
+
+
+
+
+
+
+
+.mtc{
+    height: 97px;
+    padding-right: 5px;
+    width: 110px;
+    content: url("../img/mtc.jpg");
+
+}
+.cable{
+    padding-right: 3px;
+
+    height: 97px;
+    width: 110px;
+    content: url("../img/cable.jpg");
+
+}
+.tech{
+    height: 97px;
+    width: 110px;
+    content: url("../img/tech.jpg");
+
+}
+
+.stories .third{
+    border-radius: 2px;
+    width: 229px;
+}
+
+
+
+
+
+.ravishanker-before{
+    background: white;
+    text-align: left;
+        padding: 5px;
+
+}
+.ravishanker-before hr{
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    width: 313px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ECECEC;
+
+}
+
+
+.ravishanker-before blockquote{
+    color:  #565656;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px; 
+    margin: 0;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 8px;
+
+}
+.ravishanker-before blockquote p{
+    margin: 0;
+}
+
+.ravishanker-before blockquote p:before{
+    content: url("../img/quote-grey.png");
+}
+.ravishanker-before .details-all:after{
+    content: url("../img/ravilogo.jpg");
+    padding-right: 15px;
+    float:right;
+}
+
+
+
+
+.hp{
+    margin-bottom: 0;
+    margin-top: 5px;
+
+    height: 97px;
+    width: 110px;
+    content: url("../img/hp.jpg");
+
+}
+.atos{
+        margin-bottom: 0;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    height: 97px;
+    width: 110px;
+    content: url("../img/atos.jpg");
+    padding-left:4px;
+
+}
+
+.name{
+color:  #3aa6db;
+font-size: 14px; 
+font-weight: 300;
+line-height: 30px; 
+text-align: left;
+}
+
+
+
+
+
+
+
+
+    
+
+
+
 
 
 footer{
-    background: #323232;
+    background: #2D2D2D;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center ;
+    background-position-y:center;
     color:white;
+    height: 323px;
+    z-index: 5;
 }
 footer ul{
+    margin: 0;
         list-style: none;
 }
 
