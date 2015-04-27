@@ -110,6 +110,7 @@ nav {
     color:#585951;
     top: 0;
     right:0;
+    padding-right: 32px;
     /*padding-top:5px;*/
 }
 
@@ -377,43 +378,43 @@ border-radius: 6px;
 
 
 .icons .machine::before{
-      content: url("../img/solution_icon_smart-money.png");
+      content: url("../img/solution_icon_biz-transform.png");
 }
 
 .icons .machine:hover::before{
-      content: url("../img/solution_icon_smart-money_hover.png");
+      content: url("../img/solution_icon_biz-transform_hover.png");
 }
 
 .icons .ott::before{
-      content: url("../img/solution_icon_smart-money.png");
+      content: url("../img/solution_icon_biz-analitics.png");
 }
 
 .icons .ott:hover::before{
-      content: url("../img/solution_icon_smart-money_hover.png");
+      content: url("../img/solution_icon_biz-analitics_hover.png");
 }
 
 .icons .cloud::before{
-      content: url("../img/solution_icon_smart-money.png");
+      content: url("../img/solution_icon_diti-cx.png");
 }
 
 .icons .cloud:hover::before{
-      content: url("../img/solution_icon_smart-money_hover.png");
+      content: url("../img/solution_icon_diti-cx_hover.png");
 }
 
 .icons .managed::before{
-      content: url("../img/solution_icon_smart-money.png");
+      content: url("../img/solution_icon_optimize-efficnt.png");
 }
 
 .icons .managed:hover::before{
-      content: url("../img/solution_icon_smart-money_hover.png");
+      content: url("../img/solution_icon_optimize-efficnt_hover.png");
 }
 
 .icons .social::before{
-      content: url("../img/solution_icon_smart-money.png");
+      content: url("../img/solution_icon_personal.png");
 }
 
 .icons .social:hover::before{
-      content: url("../img/solution_icon_smart-money_hover.png");
+      content: url("../img/solution_icon_personal_hover.png");
 }
 
 
@@ -974,17 +975,175 @@ footer{
     background-position-x: center ;
     background-position-y:center;
     color:white;
-    height: 323px;
     z-index: 5;
+    padding-top: 10px;
 }
+
+.sitemap{
+    max-width:960px;
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    color: white;
+
+        
+
+}
+
 footer ul{
+    list-style: none;
+    display: block;
+    position: relative;
     margin: 0;
-        list-style: none;
+    padding: 0;
 }
 
 
-.latest{
+.sitemap-li{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    margin: 0 10px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
 }
+
+
+
+
+.last{
+    background-color: rgba(225, 225, 225, 0.28);
+    background: -webkit-linear-gradient(90deg, rgba(93, 93, 93, 0.28) 0%, rgba(255, 255, 255, 0.28) 100%);
+    background: -moz-linear-gradient(90deg, rgba(93, 93, 93, 0.28) 0%, rgba(255, 255, 255, 0.28) 100%);
+    background: -o-linear-gradient(90deg, rgba(93, 93, 93, 0.28) 0%, rgba(255, 255, 255, 0.28) 100%);
+    background: -ms-linear-gradient(90deg, rgba(93, 93, 93, 0.28) 0%, rgba(255, 255, 255, 0.28) 100%);
+    background: linear-gradient(0deg, rgba(93, 93, 93, 0.28) 0%, rgba(255, 255, 255, 0.28) 100%);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.11);
+    width: 263px;
+    height: 323px;
+    vertical-align: top;
+}
+
+.latesttime{
+      display: inline-block;
+      border-radius: 0px;
+      background-color: transparent;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+      vertical-align: top;
+      width: 69px;
+      height: 99px;
+       margin-top: 0; 
+      margin-right: 5px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      float: left;
+}
+.latest h5{
+    color:  #4ea7d3;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+}
+.latesttime .day{
+    padding-top: 0; 
+      vertical-align: top;
+
+   padding-right: 0px; 
+  padding-left: 0;
+  padding-bottom: 0; 
+  /* color: white; */
+  text-align: center;
+   display: block; 
+  border-bottom: none; 
+  font-size: 40px;
+  font-weight: 400;
+  /* width: 60px; */
+
+}
+
+.latest .month {
+  color: white;
+  text-align: center;
+  display: block;
+   font-size: 15px; 
+  font-weight: 400;
+}
+.last .latest-hr{
+    background-color:  #6a6a6a;
+    box-shadow: 0px 1px 0px 0px #434343;
+    width: 230px;
+    height: 1px;
+
+    display: block;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    padding: 0;
+
+}
+
+.subscribe h5{
+    color:  #4ea7d3;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.submit-signup{
+    border-radius: 2px;
+    background: -webkit-linear-gradient(90deg, #2991c5 0%, #46b5ec 100%);
+    border-style: none;
+    width: 67px;
+    height: 28px;
+    color:  #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28.456px;
+    text-align: left;
+
+}
+
+.input-signup{
+    border-style: none;
+    vertical-align: top;
+    border-radius: 2px;
+    background-color:  #ffffff;
+    width: 150px;
+    height: 28px;
+    margin-left: 20px;
+    padding-right: 0;
+    margin-right: -4px;
+
+}
+
+
+
+
+.copyright{
+color:  #969696;
+font-size: 12px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+}
+
+
+
+
+
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
