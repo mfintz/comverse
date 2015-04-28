@@ -204,10 +204,10 @@ nav {
 }
 
 .carousel-container > h1{
-    font-size: 42px ;  /* Approximation due to font substitution */
+    font-size: 42px ; 
     font-weight: 400;
-    font-size: 42px; /* Approximation due to font substitution */
-    line-height: 44px; /* Approximation due to font substitution */
+    font-size: 42px; 
+    line-height: 44px; 
     text-align: left;
     width:415px;
 
@@ -248,6 +248,24 @@ nav {
 }
 
 
+.firstslide{
+    content: url("../img/slideblue.jpg");
+}
+
+.secondslide ,
+.thirdslide ,
+.forthslide{
+    content: url("../img/slidegrey.jpg");
+
+}
+
+
+.secondslide:hover,
+.thirdslide:hover ,
+.forthslide:hover{
+    content: url("../img/slideblue.jpg");
+
+}
 
 .morebox{
     width:286px;
@@ -761,25 +779,54 @@ time{
 }
 
 .cycle{
+    position: relative;
     padding-top: 10px;
     height: 97px;
     padding-right: 5px;
     width: 110px;
     content: url("../img/cycle.jpg");
 }
+
+.cycle:hover{
+    padding-top: 10px;
+    height: 97px;
+    padding-right: 5px;
+    width: 110px;
+    content: url("../img/play.jpg");
+    position: relative;
+
+}
+
 .bull{
+    position: relative;
     height: 97px;
     padding-right: 5px;
     width: 110px;
     content: url("../img/bull.jpg");
 }
+
+.bull:hover{
+    position: relative;
+    content: url("../img/play.jpg");
+    height: 97px;
+    padding-right: 5px;
+    width: 110px;
+}
+
 .gem{
+    position: relative;
     height: 97px;
     width: 110px;
     content: url("../img/gem.jpg");
 
 }
 
+.gem:hover{
+    position: relative;
+    content: url("../img/play.jpg");
+    height: 97px;
+    width: 110px;
+}
 
 
 
@@ -796,6 +843,9 @@ time{
     text-align: left;
     padding-bottom: 0px;
 }
+
+
+
 
 .adale-before hr{
     -webkit-margin-start: auto;
@@ -853,23 +903,48 @@ time{
     padding-right: 5px;
     width: 110px;
     content: url("../img/mtc.jpg");
+    position: relative;
 
+}
+
+.mtc:hover{
+    position: relative;
+    content: url("../img/play.jpg");
+    height: 97px;
+    padding-right: 5px;
+    width: 110px;
 }
 .cable{
     padding-right: 3px;
-
     height: 97px;
     width: 110px;
     content: url("../img/cable.jpg");
+    position: relative;
 
 }
+
+.cable:hover{
+    position: relative;
+    content: url("../img/play.jpg");
+    padding-right: 3px;
+    height: 97px;
+    width: 110px;
+}
+
 .tech{
     height: 97px;
     width: 110px;
     content: url("../img/tech.jpg");
-
+    position: relative;
 }
 
+
+.tech:hover{
+    position: relative;
+    content: url("../img/play.jpg");
+    height: 97px;
+    width: 110px;
+}
 .stories .third{
     border-radius: 2px;
     width: 229px;
@@ -883,7 +958,7 @@ time{
     background: white;
     text-align: left;
         padding: 5px;
-
+padding-top: 9px;
 }
 .ravishanker-before hr{
     -webkit-margin-start: auto;
@@ -929,13 +1004,24 @@ time{
 .hp{
     margin-bottom: 0;
     margin-top: 5px;
-
+    vertical-align: bottom;
     height: 97px;
     width: 110px;
     content: url("../img/hp.jpg");
 
 }
+.hp:hover{
+        position: relative;
+    content: url("../img/play.jpg");
+        margin-bottom: 0;
+    margin-top: 5px;
+    vertical-align: bottom;
+    height: 97px;
+    width: 110px;
+}
 .atos{
+        vertical-align: bottom;
+
         margin-bottom: 0;
     padding-bottom: 0px;
     margin-top: 0px;
@@ -946,6 +1032,16 @@ time{
 
 }
 
+.atos:hover{
+    position: relative;
+    content: url("../img/play.jpg");
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    height: 97px;
+    width: 110px;
+    padding-left:4px;
+}
 .name{
 color:  #3aa6db;
 font-size: 14px; 
