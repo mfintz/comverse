@@ -60,6 +60,7 @@ body{
 }
 
 .logo {
+    z-index: 200;
   height: 100%;
   position: relative;
   display: inline-block;
@@ -76,21 +77,49 @@ nav {
 }
 
 .navbar {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding-left:180px;
-    padding-right:70px;
+    padding-right:45px;
     padding-top:1px;
-    position: relative;
     display: inline-block;
+    background-color: white;
 }
 
-.navbar> li {
-    list-style-type: none;
-    display: inline-block;
-  /*  float:left; */ /*TODO:not sure, if i use float then inline would work*/
- /*   position:relative;*/
+.navbar:after {
+  content: "";
+  display: block;
+  color: black;
+  clear: both;
 }
+
+.navbar-outside > ul {
+  display: none;
+  position: absolute;
+  width: 150px;
+}
+
+li a {
+  color: #333;
+}
+
+.navbar> .navbar-outside  {
+  float: left;
+
+}
+
+.navbar li:hover > .navbar-inside {
+  display: block;
+}
+
+.navbar-outside > .navbar-inside > li {
+  float: none;
+
+}
+
+
+
+
 
 
 .navbar> li > a {
@@ -133,6 +162,7 @@ nav {
     margin-right: 0px;
     margin-left:0px;
     padding-left: 0px;
+    float: right;
 }
 
 .search input {
