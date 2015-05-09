@@ -1616,10 +1616,7 @@ text-align: left;
 
 }
 
-.offering{
-    position: relative;
-    height: 100%;
-}
+
 .sitemap{
     display: none;
 }
@@ -1637,9 +1634,15 @@ text-align: left;
     }
 
 .offering{
+    position: relative;
+    height: 100%;
     text-align: center;
     display: block;
     padding: 0;
+}
+
+.whatcanwe{
+    height: 100%;
 }
 .whatcanwe h3{
     padding-top: 100px;
@@ -1651,6 +1654,7 @@ text-align: left;
 /******************************HAPPENING***************/
     .events{
         text-align: center;
+        height: 100%;
     }
     .happening{
         text-align: center;
