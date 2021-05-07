@@ -16,7 +16,7 @@
     "url": "https://github.com/mfintz/comverse/issues"
   },
   "homepage": "https://github.com/mfintz/comverse",
-  "devDependencies": {
-    "grunt": "^0.4.5"
+  "dependencies": {
+    "grunt": ">=1.3.0"
   }
 }
